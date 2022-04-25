@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+ul {
+  list-style-type: none;
+}
+html{
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.handle-bar {
+  display: flex;
+  height: 50px;
+  width: 100vw;
+  /* border: 1px solid blue; */
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.handle-bar li ~ li {
+  margin-left: 150px;
+}
+
+.point{
+    color: #2980b9;
+    font-size: 20px;
+}
+
+
+
+canvas {
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 500px;
+  /* text-align: center; */
+}
+
+.progress {
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 18px;
+  border-radius: 4px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  background-color: #fcbc51;
+  width: 100%;
+  background-image: linear-gradient(
+    45deg,
+    rgb(252, 163, 17) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(252, 163, 17) 50%,
+    rgb(252, 163, 17) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+
+
+
+
+/* CSS */
+.button-24 {
+  background: #16a085;
+  border: 1px solid #16a085;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #16a085;
+}
+
+.button-24:active {
+  opacity: .5;
+}
